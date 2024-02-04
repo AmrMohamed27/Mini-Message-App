@@ -1,0 +1,10 @@
+extends layout
+
+block content
+    h1="Add New Messages:"
+    form(method="POST" action="/new")
+        input(type="text" name="author" placeholder="John Doe")
+        label(for="author")
+        input(type="text" name="msg" placeholder="Hello World!")
+        label(for="msg")
+        input(type="submit" value="Add Message")
